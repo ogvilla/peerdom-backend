@@ -1,5 +1,6 @@
 export const Query = `
     type Query {
-        hello: String
+        hello: String,
+        messages: [Message]
     }
 `;

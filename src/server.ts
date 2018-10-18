@@ -1,10 +1,12 @@
 import * as express from 'express';
 import {ApolloServer, gql} from 'apollo-server-express';
-import {resolvers} from './graphql/resolvers';
-import {Mutation} from './graphql/types/mutation';
-import {Query} from './graphql/types/query';
 
-const typeDefs = [Query, Mutation];
+import {resolvers} from 'graphql/resolvers';
+import {Mutation} from 'graphql/types/mutation';
+import {Query} from 'graphql/types/query';
+import {types} from 'graphql/types';
+
+const typeDefs = [Query, Mutation, ...types];
 
 const server = new ApolloServer({typeDefs, resolvers});
 
