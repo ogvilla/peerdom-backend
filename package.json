@@ -45,5 +45,6 @@
   "devDependencies": {
     "prettier": "^1.14.3",
     "tslint": "^5.11.0"
-  }
+  },
+  "license": "SEE LICENSE IN LICENSE.TXT"
 }
