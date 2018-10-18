@@ -1,5 +1,6 @@
 import {helloResolver} from './resolvers/hello';
-import {messageResolver} from './resolvers/message';
+import {createPeerMutation} from './mutations/create-peer';
+import {peersResolver} from './resolvers/peers';
 
 export const resolvers = {
   Node: {
@@ -17,8 +18,10 @@ export const resolvers = {
   },
   Query: {
     ...helloResolver,
-    ...messageResolver
+    ...peersResolver
   },
 
-  Mutation: {}
+  Mutation: {
+    ...createPeerMutation
+  }
 };

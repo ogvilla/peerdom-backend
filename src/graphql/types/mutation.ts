@@ -1,5 +1,7 @@
 export const Mutation = `
     type Mutation {
-        hello: String
+        createPeer (
+            peer: NewPeerPatch!
+        ): Peer
     }
 `;

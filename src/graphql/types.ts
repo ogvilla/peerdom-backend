@@ -4,7 +4,8 @@ import {Circle} from './types/circle';
 import {Role} from './types/role';
 import {Holder} from './types/holder';
 import {Node} from './types/node';
+import {NewPeerPatch} from './types/new-peer-patch';
 
 import {scalars} from './scalars';
 
-export const types = [scalars, Circle, Holder, Mission, Node, Peer, Role];
+export const types = [scalars, Circle, Holder, Mission, Node, Peer, Role, NewPeerPatch];
