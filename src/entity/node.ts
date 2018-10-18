@@ -10,7 +10,7 @@ import {
 } from 'typeorm';
 
 import {Tenant} from './tenant';
-import {RoleOwnership} from './roleownership';
+import {RoleHolding} from './roleholding';
 
 @Entity('node')
 export class Node {
@@ -28,11 +28,12 @@ export class Node {
   @JoinColumn()
   tenant: Tenant;
 
-  @OneToMany(type => RoleOwnership, roleOwnership => roleOwnership.role)
-  roleOwnerships: RoleOwnership[];
+  @OneToMany(type => RoleHolding, roleHolding => roleHolding.role)
+  roleHoldings: RoleHolding[];
 
-  @OneToMany(type => RoleOwnership, coreRoleOwnership => coreRoleOwnership.circle)
-  coreRoleOwnerships: RoleOwnership[];
+  // in case ( and only in this case ) this object is a circle, it can contain core role
+  @OneToMany(type => RoleHolding, coreRoleHolding => coreRoleHolding.circle)
+  coreRoleHoldings: RoleHolding[];
 
   @Column()
   name: string;

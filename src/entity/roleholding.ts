@@ -13,21 +13,21 @@ import {
 import {Peer} from './peer';
 import {Node} from './node';
 
-@Entity('role-ownership')
+@Entity('role-holding')
 @Index(['peer', 'role', 'circle'], {unique: true})
-export class RoleOwnership {
+export class RoleHolding {
   @PrimaryGeneratedColumn('uuid')
   id: string;
 
-  @ManyToOne(type => Peer, peer => peer.roleOwnerships)
+  @ManyToOne(type => Peer, peer => peer.roleHoldings)
   @JoinColumn()
   peer: Peer;
 
-  @ManyToOne(type => Node, node => node.roleOwnerships)
+  @ManyToOne(type => Node, node => node.roleHoldings)
   @JoinColumn()
   role: Node;
 
-  @ManyToOne(type => Node, node => node.coreRoleOwnerships)
+  @ManyToOne(type => Node, node => node.coreRoleHoldings)
   @JoinColumn()
   circle: Node;
 

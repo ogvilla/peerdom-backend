@@ -10,7 +10,7 @@ import {
 } from 'typeorm';
 
 import {Tenant} from './tenant';
-import {RoleOwnership} from './roleownership';
+import {RoleHolding} from './roleholding';
 
 @Entity('peer')
 export class Peer {
@@ -21,8 +21,8 @@ export class Peer {
   @JoinColumn()
   tenant: Tenant;
 
-  @OneToMany(type => RoleOwnership, roleOwnership => roleOwnership.peer)
-  roleOwnerships: RoleOwnership[];
+  @OneToMany(type => RoleHolding, roleHolding => roleHolding.peer)
+  roleHoldings: RoleHolding[];
 
   @Column()
   firstName: string;
