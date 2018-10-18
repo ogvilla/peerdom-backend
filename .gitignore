@@ -141,3 +141,6 @@ typings/
 
 # Serverless directories
 .serverless
+
+# Peerdom backend specific
+ormconfig.json
