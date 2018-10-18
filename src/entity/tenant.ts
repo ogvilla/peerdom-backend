@@ -17,13 +17,13 @@ export class Tenant {
   @Column()
   tenantName: string;
 
-  @Column({type: 'jsonb', nullable: false})
+  @Column({type: 'jsonb', nullable: true})
   mapSettings: any;
 
-  @Column({type: 'jsonb', nullable: false})
+  @Column({type: 'jsonb', nullable: true})
   missionSettings: any;
 
-  @Column({type: 'jsonb', nullable: false})
+  @Column({type: 'jsonb', nullable: true})
   matomoSettings: any;
 
   @CreateDateColumn()
