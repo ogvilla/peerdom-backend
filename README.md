@@ -29,3 +29,26 @@ If get `'function uuid_generate_v4() does not exist'.` Connect to 'peerdom-test'
 ## Config
 
 Edit ormconfig.json and add the DB settings (user & password)
+
+
+## Testing on the graphql playground
+
+Here are proposed queries and mutations to test the data on the graphql playground
+
+
+### Read the `firstName` of all `peers`
+```
+{
+  peers {firstName}
+}
+```
+
+
+### Create a new `peer`
+```
+mutation {
+  createPeer(
+    peer: {firstName: "x", lastName: "x", displayName: "x"}
+  ) {firstName}
+}
+```
