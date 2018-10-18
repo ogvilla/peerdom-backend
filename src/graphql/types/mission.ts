@@ -5,7 +5,7 @@ export const Mission = gql`
     id: ID!
     peerId: String!
     text: String!
-    createdAt: Date!
-    updatedAt: Date!
+    createdAt: GraphQLDateTime!
+    updatedAt: GraphQLDateTime!
   }
 `;

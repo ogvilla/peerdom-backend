@@ -1,5 +1,4 @@
 import {gql} from 'apollo-server-express';
-import {Node} from './node';
 
 export const Circle = gql`
   type Circle implements Node {
@@ -13,8 +12,8 @@ export const Circle = gql`
     policies: [String]
     notes: String
     color: String
-    createdAt: Date
-    updatedAt: Date
+    createdAt: GraphQLDateTime
+    updatedAt: GraphQLDateTime
     children: [Node]!
     peerIds: [String]!
     directPeerIds: [String]!

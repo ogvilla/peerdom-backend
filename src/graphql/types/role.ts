@@ -12,8 +12,8 @@ export const Role = gql`
     policies: [String]
     notes: String
     color: String
-    createdAt: Date
-    updatedAt: Date
+    createdAt: GraphQLDateTime
+    updatedAt: GraphQLDateTime
     holders: [Holder]
   }
 `;

@@ -4,8 +4,8 @@ export const Holder = gql`
   type Holder {
     peerId: ID!
     focus: String
-    electedUntil: Date
-    createdAt: Date!
-    updatedAt: Date!
+    electedUntil: GraphQLDate
+    createdAt: GraphQLDateTime!
+    updatedAt: GraphQLDateTime!
   }
 `;

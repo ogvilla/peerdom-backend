@@ -3,5 +3,8 @@ import {Mission} from './types/mission';
 import {Circle} from './types/circle';
 import {Role} from './types/role';
 import {Holder} from './types/holder';
+import {Node} from './types/node';
 
-export const types = [Circle, Holder, Mission, Peer, Role];
+import {scalars} from './scalars';
+
+export const types = [scalars, Circle, Holder, Mission, Node, Peer, Role];

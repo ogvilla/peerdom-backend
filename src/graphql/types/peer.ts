@@ -6,7 +6,7 @@ export const Peer = gql`
     firstName: String!
     lastName: String!
     displayName: String!
-    createdAt: Date!
-    updatedAt: Date!
+    createdAt: GraphQLDateTime!
+    updatedAt: GraphQLDateTime!
   }
 `;
