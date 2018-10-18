@@ -6,6 +6,9 @@ export const Peer = gql`
     firstName: String!
     lastName: String!
     displayName: String!
+    mission: Mission
+    roles: [Role]
+    mapStructure: Circle
     createdAt: GraphQLDateTime!
     updatedAt: GraphQLDateTime!
   }
