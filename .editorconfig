@@ -1,0 +1,30 @@
+# Editor configuration, see http://editorconfig.org
+root = true
+
+[*]
+charset = utf-8
+indent_style = space
+indent_size = 2
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[*.md]
+trim_trailing_whitespace = false
+
+# Docstrings and comments use max_line_length = 79
+[*.py]
+indent_size = 4
+max_line_length = 119
+
+# The JSON files contain newlines inconsistently
+[*.json]
+insert_final_newline = false
+
+# Minified JavaScript files shouldn't be changed
+[**.min.js]
+indent_style = false
+insert_final_newline = false
+
+# Batch files use tabs for indentation
+[*.bat]
+indent_style = tab
