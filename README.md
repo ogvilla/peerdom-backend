@@ -33,7 +33,6 @@ If get `'function uuid_generate_v4() does not exist'.` Connect to 'peerdom-test'
 
 Edit ormconfig.json and add the DB settings (user & password)
 
-
 ## Testing on the graphql playground
 
 Here are proposed queries and mutations to test the data on the graphql playground
@@ -55,3 +54,18 @@ mutation {
   ) {firstName}
 }
 ```
+
+## License
+
+This work is currently all right reserved by Nothing AG. When we will be close
+to a release we will license this work under the Business Software License 1.1.
+You can [subscribe to this pull
+request](https://github.com/peerdom/peerdom-backend/pull/2) if you want to
+follow the situation.
+
+The gist of the BSL 1.1 is:
+* The source code will always remain available
+* Each version of the software will be proprietary and under an usage limit
+  **for 3 years**
+* At the 3 years anniversary of the version, the version will **automatically
+  be relicensed under the AGPLv3**
