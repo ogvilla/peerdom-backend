@@ -5,7 +5,5 @@ export const NewPeerPatch = gql`
     firstName: String!
     lastName: String!
     displayName: String!
-    createdAt: GraphQLDateTime!
-    updatedAt: GraphQLDateTime!
   }
 `;
