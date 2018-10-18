@@ -1,7 +1,8 @@
-export const Role = `
+import {gql} from 'apollo-server-express';
+
+export const Role = gql`
   type Role implements Node {
-  interface Node {
-    id : ID!
+    id: ID!
     parentId: String
     type: String!
     name: String!

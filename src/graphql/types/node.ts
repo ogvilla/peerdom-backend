@@ -1,6 +1,8 @@
-export const Node = `
+import {gql} from 'apollo-server-express';
+
+export const Node = gql`
   interface Node {
-    id : ID!
+    id: ID!
     parentId: String
     type: String!
     name: String!

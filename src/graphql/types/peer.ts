@@ -1,6 +1,8 @@
-export const Peer = `
+import {gql} from 'apollo-server-express';
+
+export const Peer = gql`
   type Peer {
-    id : ID!
+    id: ID!
     firstName: String!
     lastName: String!
     displayName: String!

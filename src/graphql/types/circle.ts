@@ -1,7 +1,9 @@
-export const Circle = `
+import {gql} from 'apollo-server-express';
+import {Node} from './node';
+
+export const Circle = gql`
   type Circle implements Node {
-  interface Node {
-    id : ID!
+    id: ID!
     parentId: String
     type: String!
     name: String!
@@ -13,7 +15,7 @@ export const Circle = `
     color: String
     createdAt: Date
     updatedAt: Date
-    children: [(Circle | Role)]!
+    children: [Node]!
     peerIds: [String]!
     directPeerIds: [String]!
   }

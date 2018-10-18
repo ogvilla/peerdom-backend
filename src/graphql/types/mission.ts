@@ -1,6 +1,8 @@
-export const Mission = `
+import {gql} from 'apollo-server-express';
+
+export const Mission = gql`
   type Mission {
-    id : ID!
+    id: ID!
     peerId: String!
     text: String!
     createdAt: Date!
