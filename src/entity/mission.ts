@@ -15,7 +15,7 @@ export class Mission {
   @PrimaryGeneratedColumn('uuid')
   id: string;
 
-  @OneToOne(type => Peer)
+  @OneToOne(type => Peer, peer => peer.id)
   @JoinColumn()
   peer: Peer;
 

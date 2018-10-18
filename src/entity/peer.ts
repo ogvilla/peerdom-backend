@@ -6,11 +6,13 @@ import {
   Column,
   ManyToOne,
   OneToMany,
-  JoinColumn
+  JoinColumn,
+  OneToOne
 } from 'typeorm';
 
 import {Tenant} from './tenant';
 import {RoleOwnership} from './roleownership';
+import {Mission} from './mission';
 
 @Entity('peer')
 export class Peer {
@@ -32,6 +34,9 @@ export class Peer {
 
   @Column()
   displayName: string;
+
+  @OneToOne(type => Mission, mission => mission.peer)
+  mission: Mission;
 
   @CreateDateColumn()
   createdAt: Date;
