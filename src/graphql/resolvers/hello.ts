@@ -1,5 +1,5 @@
 export const helloResolver = {
-    async hello() {
-        return 'Hello world!'
-    }
+  async hello() {
+    return 'Hello world!';
+  }
 };
