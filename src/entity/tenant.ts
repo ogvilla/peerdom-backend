@@ -1,17 +1,10 @@
-import {
-  Entity,
-  PrimaryGeneratedColumn,
-  CreateDateColumn,
-  UpdateDateColumn,
-  Column,
-  OneToMany
-} from "typeorm";
+import {Entity, PrimaryGeneratedColumn, CreateDateColumn, UpdateDateColumn, Column, OneToMany} from 'typeorm';
 
-import { Peer } from "./peer";
+import {Peer} from './peer';
 
-@Entity("tenant")
+@Entity('tenant')
 export class Tenant {
-  @PrimaryGeneratedColumn("uuid")
+  @PrimaryGeneratedColumn('uuid')
   id: string;
 
   @OneToMany(type => Peer, peer => peer.tenant)
@@ -20,13 +13,13 @@ export class Tenant {
   @Column()
   tenantName: string;
 
-  @Column({ type: "jsonb", nullable: false })
+  @Column({type: 'jsonb', nullable: false})
   mapSettings: any;
 
-  @Column({ type: "jsonb", nullable: false })
+  @Column({type: 'jsonb', nullable: false})
   missionSettings: any;
 
-  @Column({ type: "jsonb", nullable: false })
+  @Column({type: 'jsonb', nullable: false})
   matomoSettings: any;
 
   @CreateDateColumn()

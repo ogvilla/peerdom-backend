@@ -1,17 +1,10 @@
-import {
-  Entity,
-  PrimaryGeneratedColumn,
-  CreateDateColumn,
-  UpdateDateColumn,
-  Column,
-  ManyToOne
-} from "typeorm";
+import {Entity, PrimaryGeneratedColumn, CreateDateColumn, UpdateDateColumn, Column, ManyToOne} from 'typeorm';
 
-import { Tenant } from "./tenant";
+import {Tenant} from './tenant';
 
-@Entity("peer")
+@Entity('peer')
 export class Peer {
-  @PrimaryGeneratedColumn("uuid")
+  @PrimaryGeneratedColumn('uuid')
   id: string;
 
   @ManyToOne(type => Tenant, tenant => tenant.peers)

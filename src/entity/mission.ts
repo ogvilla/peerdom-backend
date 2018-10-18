@@ -6,13 +6,13 @@ import {
   Column,
   OneToOne,
   JoinColumn
-} from "typeorm";
+} from 'typeorm';
 
-import { Peer } from "./peer";
+import {Peer} from './peer';
 
-@Entity("mission")
+@Entity('mission')
 export class Mission {
-  @PrimaryGeneratedColumn("uuid")
+  @PrimaryGeneratedColumn('uuid')
   id: string;
 
   @OneToOne(type => Peer)
