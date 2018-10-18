@@ -1,6 +1,7 @@
 import {Entity, PrimaryGeneratedColumn, CreateDateColumn, UpdateDateColumn, Column, OneToMany} from 'typeorm';
 
 import {Peer} from './peer';
+import {Node} from './node';
 
 @Entity('tenant')
 export class Tenant {
@@ -9,6 +10,9 @@ export class Tenant {
 
   @OneToMany(type => Peer, peer => peer.tenant)
   peers: Peer[];
+
+  @OneToMany(type => Node, node => node.tenant)
+  nodes: Node[];
 
   @Column()
   tenantName: string;
