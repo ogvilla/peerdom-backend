@@ -11,12 +11,15 @@ ecosystem of digital tools that helps organisations evolve as a decentralized, v
 
 ## Setup PostgreSQL user and Table
 
-    sudo su - postgres
-    createuser --pwprompt peerdom
-    createdb -O peerdom peerdom-test
+#### On Linux
+```
+sudo apt-get install postgresql
+sudo su - postgres
+createuser --pwprompt peerdom
+createdb -O peerdom peerdom-test
+```
 
 ### On macOS
-
 ```
 brew install postgresql
 brew services start postgresql
