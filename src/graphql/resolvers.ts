@@ -1,4 +1,3 @@
-import {helloResolver} from './resolvers/hello';
 import {createPeerMutation} from './mutations/create-peer';
 import {peersResolver} from './resolvers/peers';
 
@@ -17,7 +16,6 @@ export const resolvers = {
     }
   },
   Query: {
-    ...helloResolver,
     ...peersResolver
   },
 
