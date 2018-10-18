@@ -3,7 +3,6 @@ import {gql} from 'apollo-server-express';
 export const Circle = gql`
   type Circle implements Node {
     id: ID!
-    parentId: String
     type: String!
     name: String!
     purpose: String!
