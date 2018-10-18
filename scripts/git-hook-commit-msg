@@ -3,8 +3,8 @@
 # How to use.
 # -----------
 #
-# You should copy this file in your Git hook folder under the name `commit-msg`.
-# Here is a one liner that does exactly that:
+# You should copy this file in the project's Git hook folder under the name
+# `commit-msg`.  Here is a one liner that does exactly that:
 #
 # cd `git rev-parse --show-toplevel` && cp scripts/git-hook-commit-msg .git/hooks/commit-msg
 #
