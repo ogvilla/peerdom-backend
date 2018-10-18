@@ -1,0 +1,29 @@
+#!/bin/sh
+
+# How to use.
+# -----------
+#
+# You should copy this file in your Git hook folder under the name `commit-msg`.
+# Here is a one liner that does exactly that:
+#
+# cd `git rev-parse --show-toplevel` && cp scripts/git-hook-commit-msg .git/hooks/commit-msg
+#
+# After that, the "Signed-off-by:" snippet will be automatically added when you
+# commit changes.
+
+NAME=$(git config user.name)
+EMAIL=$(git config user.email)
+
+if [ -z "$NAME" ]; then
+    echo "empty git config user.name"
+    exit 1
+fi
+
+if [ -z "$EMAIL" ]; then
+    echo "empty git config user.email"
+    exit 1
+fi
+
+git interpret-trailers --if-exists doNothing --trailer \
+    "Signed-off-by: $NAME <$EMAIL>" \
+    --in-place "$1"

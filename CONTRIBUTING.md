@@ -1,5 +1,20 @@
 # Contributing to Peerdom backend
 
+## Prerequisites
+
+To be accepted your contribution must be provided under the [BSD 3-clause
+licence](https://en.wikipedia.org/wiki/BSD_licenses#3-clause_license_(%22BSD_License_2.0%22,_%22Revised_BSD_License%22,_%22New_BSD_License%22,_or_%22Modified_BSD_License%22)).
+To validate this prerequisites you must sign-off your commits using the `-s`
+option when commiting:
+
+```
+$ git commit -s -m "docs: my commit message"
+```
+
+If desired, you can also automate the sign-off via the provided commit message
+hook in the [scripts folder](scripts/git-hook-commit-msg). See the
+documentation in this script to set-it up.
+
 ## Commit message guidelines
 
 Having consistent commit messages helps other developers easily identifying what changes you made and scripts to process the commit history for other use cases.
