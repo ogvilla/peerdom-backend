@@ -1,0 +1,44 @@
+[
+  {
+    "id": "40000000-1000-0000-0000-000000000001",
+    "type": "circle",
+    "name": "Finances & Administration",
+    "purpose": "Minimise the total time spent on administrative work",
+    "tenant": {
+      "id": "20000000-0000-0000-0000-000000000001"
+    }
+  },
+  {
+    "id": "40000000-3000-0000-0000-000000000001",
+    "type": "role",
+    "name": "Internal Accountant",
+    "purpose": "Settle payments and assisting our external accountant",
+    "accountabilities": [
+      "Handling all bank payments (salaries, invoices, expenses)",
+      "Interfacing with external accountant",
+      "Taking care of the legally required financial reports"
+    ],
+    "parent": {
+      "id": "40000000-1000-0000-0000-000000000001"
+    },
+    "tenant": {
+      "id": "20000000-0000-0000-0000-000000000001"
+    }
+  },
+  {
+    "id": "40000000-3000-0000-0000-000000000002",
+    "type": "role",
+    "name": "Expenses monitor",
+    "purpose": "Facilitate fair and transparent decisions regarding expenses",
+    "accountabilities": [
+      "Showing transparently how money was spent on bigger expenses",
+      "Putting in perspective proposed expenses by other roles and reaching a joint decision"
+    ],
+    "parent": {
+      "id": "40000000-1000-0000-0000-000000000001"
+    },
+    "tenant": {
+      "id": "20000000-0000-0000-0000-000000000001"
+    }
+  }
+]
