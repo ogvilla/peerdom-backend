@@ -5,7 +5,7 @@ import 'reflect-metadata';
 import {ApolloServer, AuthenticationError} from 'apollo-server-express';
 import {createConnection} from 'typeorm';
 
-import {localStrategy, loginHandler, addUserToRequest} from './conrollers/auth';
+import {localStrategy, loginHandler, addUserToRequest} from './controllers/auth';
 import {resolvers} from 'graphql/resolvers';
 import {Mutation} from 'graphql/types/mutation';
 import {Query} from 'graphql/types/query';
