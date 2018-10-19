@@ -38,16 +38,16 @@ export class Node {
   @Column()
   name: string;
 
-  @Column()
+  @Column({nullable: true})
   purpose: string;
 
-  @Column()
+  @Column({nullable: true})
   policy: string;
 
   @Column({type: 'jsonb', nullable: true})
   notes: any;
 
-  @Column()
+  @Column({nullable: true})
   color: string;
 
   @Column({

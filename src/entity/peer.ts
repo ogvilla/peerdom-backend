@@ -7,7 +7,8 @@ import {
   ManyToOne,
   OneToMany,
   JoinColumn,
-  OneToOne
+  OneToOne,
+  Index
 } from 'typeorm';
 
 import {Tenant} from './tenant';
@@ -15,6 +16,7 @@ import {RoleHolding} from './roleholding';
 import {Mission} from './mission';
 
 @Entity('peer')
+@Index(['displayName', 'tenant'], {unique: true})
 export class Peer {
   @PrimaryGeneratedColumn('uuid')
   id: string;
@@ -26,10 +28,10 @@ export class Peer {
   @OneToMany(type => RoleHolding, roleHolding => roleHolding.peer)
   roleHoldings: RoleHolding[];
 
-  @Column()
+  @Column({nullable: true})
   firstName: string;
 
-  @Column()
+  @Column({nullable: true})
   lastName: string;
 
   @Column()

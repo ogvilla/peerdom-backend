@@ -31,10 +31,10 @@ export class RoleHolding {
   @JoinColumn()
   circle: Node;
 
-  @Column()
+  @Column({nullable: true})
   focus: string;
 
-  @Column()
+  @Column({nullable: true})
   electedUntil: Date;
 
   @CreateDateColumn()
