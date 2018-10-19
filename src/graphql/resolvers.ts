@@ -1,5 +1,7 @@
 import {createPeerMutation} from './mutations/create-peer';
 import {peersResolver} from './resolvers/peers';
+import {mapResolver} from './resolvers/map';
+import {coreRolesResolver} from './resolvers/core-roles';
 
 export const resolvers = {
   Node: {
@@ -16,7 +18,9 @@ export const resolvers = {
     }
   },
   Query: {
-    ...peersResolver
+    ...peersResolver,
+    ...mapResolver,
+    ...coreRolesResolver
   },
 
   Mutation: {
