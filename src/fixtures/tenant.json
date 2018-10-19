@@ -1,0 +1,46 @@
+[
+  {
+    "id": "00000000-0000-0000-0000-000000000000",
+    "peers": [],
+    "nodes": [],
+    "tenantName": "Test0",
+    "mapSettings": {},
+    "missionSettings": {},
+    "matomoSettings": {},
+    "createdAt": "2012-04-23T18:25:43.511Z",
+    "updatedAt": "2012-04-23T18:25:43.511Z"
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000001",
+    "peers": [],
+    "nodes": [],
+    "tenantName": "Test1",
+    "mapSettings": {},
+    "missionSettings": {},
+    "matomoSettings": {},
+    "createdAt": "2012-04-23T18:25:43.511Z",
+    "updatedAt": "2012-04-23T18:25:43.511Z"
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000002",
+    "peers": [],
+    "nodes": [],
+    "tenantName": "Test2",
+    "mapSettings": {},
+    "missionSettings": {},
+    "matomoSettings": {},
+    "createdAt": "2012-04-23T18:25:43.511Z",
+    "updatedAt": "2012-04-23T18:25:43.511Z"
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000003",
+    "peers": [],
+    "nodes": [],
+    "tenantName": "Test3",
+    "mapSettings": {},
+    "missionSettings": {},
+    "matomoSettings": {},
+    "createdAt": "2012-04-23T18:25:43.511Z",
+    "updatedAt": "2012-04-23T18:25:43.511Z"
+  }
+]
