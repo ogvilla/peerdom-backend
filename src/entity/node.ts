@@ -44,7 +44,7 @@ export class Node {
   @Column()
   policy: string;
 
-  @Column({type: 'jsonb', nullable: false})
+  @Column({type: 'jsonb', nullable: true})
   notes: any;
 
   @Column()
@@ -56,10 +56,10 @@ export class Node {
   })
   type: 'circle' | 'role' | 'core_role';
 
-  @Column({type: 'jsonb', nullable: false})
+  @Column({type: 'jsonb', nullable: true})
   accountabilities: any;
 
-  @Column({type: 'jsonb', nullable: false})
+  @Column({type: 'jsonb', nullable: true})
   domains: any;
 
   @CreateDateColumn()
