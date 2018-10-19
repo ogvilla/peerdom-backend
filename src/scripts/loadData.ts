@@ -37,16 +37,23 @@ async function loadAll(connection, entities) {
   }
 }
 
+async function cleanAll(connection) {
+  return connection.synchronize(true);
+}
+
 (async () => {
   console.log('===== LOAD DATA =====');
   try {
     const connection = await createConnection();
-
-    connection.synchronize(true).then(async res => {
+    try {
       const entities = await getEntities(connection);
+      await cleanAll(connection);
       await loadAll(connection, entities);
       await connection.close();
-    });
+    } catch (error) {
+      await connection.close();
+      console.log(error);
+    }
   } catch (error) {
     console.log(error);
   }
