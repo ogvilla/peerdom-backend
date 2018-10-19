@@ -1,0 +1,53 @@
+[
+  {
+    "type": "core_role",
+    "name": "Guide",
+    "purpose": "Holding the purpose of the overall circle",
+    "accountabilities": [
+      "Structuring the governance of the circle so that it can enact its purpose and accountabilities",
+      "Assigning crew members to the circle's roles; monitoring the fit; offering feedback to enhance fit; and re-assigning roles to other crew members when useful for enhancing fit",
+      "Allocating the circle's resources across its various roles",
+      "Establishing priorities and strategies for the circle",
+      "Removing constraints within the circle as a reaction to the super-circle enacting its purpose and accountabilities"
+    ],
+    "domains": [
+      "Role assignments within the circle"
+    ],
+    "color": "#edf2ba"
+  },
+  {
+    "type": "core_role",
+    "name": "Care taker",
+    "purpose": "Channeling out and resolve tensions from the sub-circle that are relevant to process in the super-circle",
+    "accountabilities": [
+      "Removing constraints within the super-circle that limit the sub-circle",
+      "Seeking to understand tensions conveyed by sub-circle circle members, and deciding which are appropriate to process in the super-circle, where necessary with input from the OKR agent",
+      "Providing visibility of the sub-circle’s health to the super-circle, including reporting on OKRs or any metrics assigned to the whole sub-circle"
+    ],
+    "color": "#f5d9d9"
+  },
+  {
+    "type": "core_role",
+    "name": "Facilitator",
+    "purpose": "Fostering circle governance and operational practices aligned with the constitution",
+    "accountabilities": [
+      "Facilitating the circle’s governance meetings",
+      "Auditing the meetings and records of sub-circles as needed, and declaring a process breakdown upon discovering a pattern of behaviour that conflicts with the rules of the constitution"
+    ],
+    "color": "#e0f9ff"
+  },
+  {
+    "type": "core_role",
+    "name": "Interpreter",
+    "purpose": "Maintaining and assert the circle’s formal records and record-keeping process",
+    "domains": [
+      "All constitutionally-required records of the circle"
+    ],
+    "accountabilities": [
+      "Scheduling the circle’s required meetings, and notifying all circle members of these meetings",
+      "Capturing and publishing the outputs of the circle’s required meetings, and maintaining a compiled view of the circle’s current governance, checklist items, and metrics",
+      "Interpreting governance and the constitution upon request"
+    ],
+    "color": "#ddd9f9"
+  }
+]
