@@ -5,6 +5,9 @@
 if test ! -z ${DATABASE_URL+x};
 then
   cp config/ormconfig.dokku.js ormconfig.js
+
+  # Load the fixtures. Careful, this will wipe the DB!
+  npm run load.data
 # Otherwise we copy the ormconfig sample
 elif ! test -f ormconfig.json; then
   cp config/ormconfig-example.json ormconfig.json;
