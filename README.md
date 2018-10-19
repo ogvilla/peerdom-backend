@@ -2,14 +2,14 @@
 
 ecosystem of digital tools that helps organisations evolve as a decentralized, values-based collective of peers (backend)
 
-# Setup
+## Setup
 
-## Install deps
+### Install deps
 
 - NodeJS (see .nvmrc for which version) & run npm install
 - PostgreSQL (10.x)
 
-## Setup PostgreSQL user and Table
+### Setup PostgreSQL user and Table
 
 #### On Linux
 ```
@@ -19,7 +19,7 @@ createuser --pwprompt peerdom
 createdb -O peerdom peerdom-test
 ```
 
-### On macOS
+#### On macOS
 ```
 brew install postgresql
 brew services start postgresql
