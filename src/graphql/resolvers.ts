@@ -1,7 +1,7 @@
 import {createPeerMutation} from './mutations/create-peer';
 import {peersResolver} from './resolvers/peers';
 import {mapResolver} from './resolvers/map';
-import {coreRolesResolver} from './resolvers/core-roles';
+import {coreRolesResolver} from './resolvers/coreRoles';
 
 export const resolvers = {
   Node: {

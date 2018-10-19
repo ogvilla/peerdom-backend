@@ -1,7 +1,7 @@
 [
   {
     "id": "40000000-2000-0000-0000-000000000001",
-    "type": "core_role",
+    "type": "coreRole",
     "name": "Guide",
     "purpose": "Holding the purpose of the overall circle",
     "accountabilities": [
@@ -18,7 +18,7 @@
   },
   {
     "id": "40000000-2000-0000-0000-000000000002",
-    "type": "core_role",
+    "type": "coreRole",
     "name": "Care taker",
     "purpose": "Channeling out and resolve tensions from the sub-circle that are relevant to process in the super-circle",
     "accountabilities": [
@@ -30,7 +30,7 @@
   },
   {
     "id": "40000000-2000-0000-0000-000000000003",
-    "type": "core_role",
+    "type": "coreRole",
     "name": "Facilitator",
     "purpose": "Fostering circle governance and operational practices aligned with the constitution",
     "accountabilities": [
@@ -41,7 +41,7 @@
   },
   {
     "id": "40000000-2000-0000-0000-000000000004",
-    "type": "core_role",
+    "type": "coreRole",
     "name": "Interpreter",
     "purpose": "Maintaining and assert the circle’s formal records and record-keeping process",
     "domains": [

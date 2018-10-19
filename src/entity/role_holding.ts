@@ -12,9 +12,9 @@ import {
 
 import {Peer} from './peer';
 import {Node} from './node';
-import {RoleHoldingChange} from './roleholding_change';
+import {RoleHoldingChange} from './role_holding_change';
 
-@Entity('role-holding')
+@Entity('role_holding')
 @Index(['peer', 'role', 'circle'], {unique: true})
 export class RoleHolding {
   @PrimaryGeneratedColumn('uuid')
@@ -44,6 +44,6 @@ export class RoleHolding {
   @UpdateDateColumn()
   updatedAt: Date;
 
-  @OneToMany(type => RoleHoldingChange, roleholdingChange => roleholdingChange.roleholding)
-  roleholdingChanges: RoleHoldingChange[];
+  @OneToMany(type => RoleHoldingChange, roleHoldingChange => roleHoldingChange.roleHolding)
+  roleHoldingChanges: RoleHoldingChange[];
 }

@@ -12,7 +12,7 @@ import {
 } from 'typeorm';
 
 import {Tenant} from './tenant';
-import {RoleHolding} from './roleholding';
+import {RoleHolding} from './role_holding';
 import {Mission} from './mission';
 import {PeerChange} from './peer_change';
 

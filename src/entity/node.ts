@@ -10,7 +10,7 @@ import {
 } from 'typeorm';
 
 import {Tenant} from './tenant';
-import {RoleHolding} from './roleholding';
+import {RoleHolding} from './role_holding';
 import {NodeChange} from './node_change';
 
 @Entity('node')
@@ -53,9 +53,9 @@ export class Node {
 
   @Column({
     type: 'enum',
-    enum: ['circle', 'role', 'core_role']
+    enum: ['circle', 'role', 'coreRole']
   })
-  type: 'circle' | 'role' | 'core_role';
+  type: 'circle' | 'role' | 'coreRole';
 
   @Column({type: 'jsonb', nullable: true})
   accountabilities: any;
