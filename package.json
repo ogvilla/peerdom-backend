@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "postinstall": "bash script/setup-db-config.sh",
+    "start": "nodemon",
     "test": "jest",
     "load.data": "ts-node --inspect -r tsconfig-paths/register ./src/scripts/loadData.ts"
   },
