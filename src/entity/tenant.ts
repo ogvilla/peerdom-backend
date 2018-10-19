@@ -2,7 +2,6 @@ import {Entity, PrimaryGeneratedColumn, CreateDateColumn, UpdateDateColumn, Colu
 
 import {Peer} from './peer';
 import {Node} from './node';
-import {TenantChange} from './tenant_change';
 
 @Entity('tenant')
 export class Tenant {
@@ -32,7 +31,4 @@ export class Tenant {
 
   @UpdateDateColumn()
   updatedAt: Date;
-
-  @OneToMany(type => TenantChange, tenantChange => tenantChange.tenant)
-  tenantChanges: TenantChange[];
 }
