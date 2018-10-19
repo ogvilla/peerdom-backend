@@ -67,6 +67,9 @@ fabric.properties
 # Editor-based Rest Client
 .idea/httpRequests
 
+# Code style is set by Prettier
+.idea/codeStyles
+
 ### Node template
 # Logs
 logs
