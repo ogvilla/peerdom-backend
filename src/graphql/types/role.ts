@@ -6,7 +6,7 @@ export const Role = gql`
     parentId: String
     type: String!
     name: String!
-    purpose: String!
+    purpose: String
     accountabilities: [String]
     domains: [String]
     policies: [String]

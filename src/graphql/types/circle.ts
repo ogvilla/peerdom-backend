@@ -5,7 +5,7 @@ export const Circle = gql`
     id: ID!
     type: String!
     name: String!
-    purpose: String!
+    purpose: String
     accountabilities: [String]
     domains: [String]
     policies: [String]
