@@ -42,8 +42,8 @@ export class Node {
   @Column({nullable: true})
   purpose: string;
 
-  @Column({nullable: true})
-  policy: string;
+  @Column({type: 'jsonb', nullable: true})
+  policies: any;
 
   @Column({type: 'jsonb', nullable: true})
   notes: any;
