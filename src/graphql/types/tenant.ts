@@ -17,8 +17,11 @@ export const Tenant = gql`
 
   type Tenant {
     id: ID!
+    tenantName: String
     mapSettings: MapSettings
     missionSettings: MissionSettings
     matomoSettings: MatomoSettings
+    createdAt: GraphQLDateTime
+    updatedAt: GraphQLDateTime
   }
 `;
