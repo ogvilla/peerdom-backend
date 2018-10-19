@@ -1,0 +1,10 @@
+[
+  {
+    "id": "30000000-0000-0000-0000-000000000001",
+    "email": "test.user@peerdom.org",
+    "password": "$2a$08$mKjB4a.B42cazG8PA6ywA.xAMdPHSZ.cGliGp6pB5pq3siW4gW7Qe",
+    "tenant": {
+      "id": "20000000-0000-0000-0000-000000000001"
+    }
+  }
+]

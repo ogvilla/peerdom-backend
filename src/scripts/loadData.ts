@@ -5,7 +5,9 @@ const entitiesToLoad = [
   {name: 'Tenant', jsonFileNames: ['tenants']},
   {name: 'Peer', jsonFileNames: ['peers']},
   {name: 'Mission', jsonFileNames: ['missions']},
-  {name: 'Node', jsonFileNames: ['coreRoles']}
+  {name: 'Node', jsonFileNames: ['coreRoles']},
+  {name: 'User', jsonFileNames: ['user']},
+  {name: 'Token', jsonFileNames: ['token']}
 ];
 
 /*

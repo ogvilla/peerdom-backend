@@ -27,7 +27,11 @@ createuser --pwprompt peerdom
 createdb -O peerdom peerdom-test
 ```
 
-If get `'function uuid_generate_v4() does not exist'.` Connect to 'peerdom-test' and execute `CREATE EXTENSION "uuid-ossp";`
+### Enable plugins
+```
+CREATE EXTENSION "uuid-ossp";
+CREATE EXTENSION pgcrypto;
+```
 
 ## Config
 
@@ -36,6 +40,13 @@ Edit ormconfig.json and add the DB settings (user & password)
 ## Testing on the graphql playground
 
 Here are proposed queries and mutations to test the data on the graphql playground
+
+### Set auth header in the "Http Headers" tab (at the bottom)
+```
+{
+  "Authorization": "63d919543f568fcb89b280eb2eb2c5"
+}
+```
 
 
 ### Read the `firstName` of all `peers`
