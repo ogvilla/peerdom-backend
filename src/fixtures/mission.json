@@ -1,1 +1,72 @@
-{}
+[
+  {
+    "text": "I work on the infrastructure to help, support and enhance the work of our team. Ultimately leading them to be able to create without constraints.",
+    "updatedAt": "2016-12-12",
+    "peer": {
+      "id": "10000000-0000-0000-0000-000000000001"
+    }
+  },
+  {
+    "text": "I believe that life is found in adventures, where you learn, make discoveries and push beyond your limits. My mission here is to make the web a place where others can experience exactly that, thereby making an impact with what I do.",
+    "updatedAt": "2017-10-05",
+    "peer": {
+      "id": "10000000-0000-0000-0000-000000000002"
+    }
+  },
+  {
+    "text": "My mission is to expose simplicity—through my code as much as through my communication. I want to increase people's understanding by breaking down complex structures for and with them. Through discovery and synthesis, I want to reveal the core of what really counts and with that create the things which people truly need.",
+    "updatedAt": "2017-11-12",
+    "peer": {
+      "id": "10000000-0000-0000-0000-000000000003"
+    }
+  },
+  {
+    "text": "I want to foster understanding and develop real and meaningful connections between people. Embracing these values myself, I strive to create software that excites people because it gives them the feeling that someone really gets them.",
+    "updatedAt": "2016-09-27",
+    "peer": {
+      "id": "10000000-0000-0000-0000-000000000004"
+    }
+  },
+  {
+    "text": "I want to help make software that is accessible, sustainable and serves real people’s actual needs. While doing so I want to be aware of my own biases and pay special attention to the voices and needs of marginalised people, be they users, peers or clients.",
+    "updatedAt": "2018-03-20",
+    "peer": {
+      "id": "10000000-0000-0000-0000-000000000005"
+    }
+  },
+  {
+    "text": "I strive to give people the knowledge, structure and tools they need to harness the power of language and communication.",
+    "updatedAt": "2018-02-12",
+    "peer": {
+      "id": "10000000-0000-0000-0000-000000000006"
+    }
+  },
+  {
+    "text": "I want to reach people emotionally. Which means: At Nothing Interactive I want to highlight the value and opportunity in any task. I want to generate motivation for people around me. And with Nothing Interactive I want to strive to create products that have a positive impact on the daily life of it users and I want to strive for a purely user-centred pipeline reachable only with an honest and open communication with our clients.",
+    "updatedAt": "2018-03-05",
+    "peer": {
+      "id": "10000000-0000-0000-0000-000000000007"
+    }
+  },
+  {
+    "text": "I want to design products that build an emotional connection between people. I want to bring joy in the life by creating beautiful interfaces that are easy to use. I want to understand the people that will use our products, so I can provide them a solution that meet their needs. I want to place my design skills and creativity in service of a development of a more appealing technology that anyone could use regardless their age or skills. I want to place myself at the intersection of design and technology so I can understand it better and I can translate it into a visual language. I also want to develop myself as a person and keep on learning and improving, so I can have a positive impact around me. At work as well as in life in general.",
+    "updatedAt": "2018-03-05",
+    "peer": {
+      "id": "10000000-0000-0000-0000-000000000008"
+    }
+  },
+  {
+    "text": "I want to make people happy by making software and experiences that fulfil their needs.",
+    "updatedAt": "2017-08-05",
+    "peer": {
+      "id": "10000000-0000-0000-0000-000000000009"
+    }
+  },
+  {
+    "text": "I want to build bridges between people. By creating connections across different disciplines and between different points of view, I seek to make life simpler—for everybody involved.",
+    "updatedAt": "2018-01-06",
+    "peer": {
+      "id": "10000000-0000-0000-0000-000000000010"
+    }
+  }
+]
