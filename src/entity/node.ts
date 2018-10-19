@@ -11,6 +11,7 @@ import {
 
 import {Tenant} from './tenant';
 import {RoleHolding} from './roleholding';
+import {NodeChange} from './node_change';
 
 @Entity('node')
 export class Node {
@@ -67,4 +68,7 @@ export class Node {
 
   @UpdateDateColumn()
   updatedAt: Date;
+
+  @OneToMany(type => NodeChange, nodeChange => nodeChange.node)
+  nodeChanges: NodeChange[];
 }

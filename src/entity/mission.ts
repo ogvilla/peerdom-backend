@@ -5,10 +5,12 @@ import {
   UpdateDateColumn,
   Column,
   OneToOne,
+  OneToMany,
   JoinColumn
 } from 'typeorm';
 
 import {Peer} from './peer';
+import {MissionChange} from './mission_change';
 
 @Entity('mission')
 export class Mission {
@@ -27,4 +29,7 @@ export class Mission {
 
   @UpdateDateColumn()
   updatedAt: Date;
+
+  @OneToMany(type => MissionChange, missionChange => missionChange.mission)
+  missionChanges: MissionChange[];
 }

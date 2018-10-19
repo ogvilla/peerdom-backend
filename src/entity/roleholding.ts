@@ -6,12 +6,13 @@ import {
   UpdateDateColumn,
   Column,
   ManyToOne,
-  JoinColumn,
-  PrimaryColumn
+  OneToMany,
+  JoinColumn
 } from 'typeorm';
 
 import {Peer} from './peer';
 import {Node} from './node';
+import {RoleHoldingChange} from './roleholding_change';
 
 @Entity('role-holding')
 @Index(['peer', 'role', 'circle'], {unique: true})
@@ -42,4 +43,7 @@ export class RoleHolding {
 
   @UpdateDateColumn()
   updatedAt: Date;
+
+  @OneToMany(type => RoleHoldingChange, roleholdingChange => roleholdingChange.roleholding)
+  roleholdingChanges: RoleHoldingChange[];
 }

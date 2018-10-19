@@ -14,6 +14,7 @@ import {
 import {Tenant} from './tenant';
 import {RoleHolding} from './roleholding';
 import {Mission} from './mission';
+import {PeerChange} from './peer_change';
 
 @Entity('peer')
 @Index(['displayName', 'tenant'], {unique: true})
@@ -45,4 +46,7 @@ export class Peer {
 
   @UpdateDateColumn()
   updatedAt: Date;
+
+  @OneToMany(type => PeerChange, peerChange => peerChange.peer)
+  peerChanges: PeerChange[];
 }
