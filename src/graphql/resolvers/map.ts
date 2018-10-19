@@ -32,9 +32,6 @@ export const mapResolver = {
     // TODO: Should we check for circular relationship before or during populating?
     circleStructure = populateChildren(circleStructure, nodes);
 
-    console.log('\nPopulated:');
-    console.log(circleStructure);
-
     return {
       map: circleStructure
     };
@@ -46,6 +43,9 @@ const populateChildren = (node, nodes) => {
     const populatedChild = populateChildren(child, nodes);
     // We don't need the reference to the parent in the map structure
     populatedChild.parent = undefined;
+
+    // We don't want all the information about the core role to be included multiple times
+    // TODO: Figure out how to already get rid of the unwanted data when querying the DB (in repository.find() above)
     populatedChild.coreRoleHoldings = populatedChild.coreRoleHoldings.map(coreRoleHolding => {
       const newCoreRoleHolding = coreRoleHolding;
       newCoreRoleHolding.roleId = newCoreRoleHolding.role.id;

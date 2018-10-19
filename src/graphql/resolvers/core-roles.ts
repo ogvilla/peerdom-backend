@@ -6,7 +6,6 @@ export const coreRolesResolver = {
     const repository = getRepository(Node);
     // TODO: filter for one tenant
     const coreRoles = await repository.find({where: {type: 'core_role'}}); // TODO use enums?
-    console.log(coreRoles);
     return coreRoles;
   }
 };
