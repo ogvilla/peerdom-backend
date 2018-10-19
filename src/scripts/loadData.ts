@@ -10,14 +10,15 @@ Node (core-role) => 40000000-2000-0000-0000-XXXXXXXXXXXX
 Node (role) => 40000000-3000-0000-0000-XXXXXXXXXXXX
 */
 
+// WARNING: order of jsonFileNames is important due to foreign keys
 const entitiesToLoad = [
   {name: 'Tenant', jsonFileNames: ['tenants']},
   {name: 'Peer', jsonFileNames: ['peers']},
   {name: 'Mission', jsonFileNames: ['missions']},
-  {name: 'Node', jsonFileNames: ['coreRoles', 'circles/finances_admin']},
+  {name: 'Node', jsonFileNames: ['coreRoles', 'circles/GC', 'circles/finances_admin']},
   {name: 'User', jsonFileNames: ['user']},
   {name: 'Token', jsonFileNames: ['token']},
-  {name: 'RoleHolding', jsonFileNames: ['circles/finances_admin_holders']}
+  {name: 'RoleHolding', jsonFileNames: ['circles/GC_holders', 'circles/finances_admin_holders']}
 ];
 
 /*

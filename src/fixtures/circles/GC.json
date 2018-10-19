@@ -1,0 +1,11 @@
+[
+  {
+    "id": "40000000-1000-0000-0000-000000000000",
+    "type": "circle",
+    "name": "Peerdom Map Demo",
+    "purpose": "Show the Peerdom Map software to the public",
+    "tenant": {
+      "id": "20000000-0000-0000-0000-000000000001"
+    }
+  }
+]

@@ -6,6 +6,9 @@
     "purpose": "Minimise the total time spent on administrative work",
     "tenant": {
       "id": "20000000-0000-0000-0000-000000000001"
+    },
+    "parent": {
+      "id": "40000000-1000-0000-0000-000000000000"
     }
   },
   {
