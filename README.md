@@ -66,6 +66,10 @@ mutation {
 }
 ```
 
+## Running tests
+- Make sure the server is running: `npm start`
+- Run the tests `npm test`
+
 ## Deployment
 
 The app is deployed via a `git push` to our deployment server (you need to be
