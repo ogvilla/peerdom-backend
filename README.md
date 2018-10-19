@@ -58,7 +58,7 @@ mutation {
 ## License
 
 This work is currently all right reserved by Nothing AG. When we will be close
-to a release we will license this work under the Business Software License 1.1.
+to a release we will license this work under the Business Source License 1.1.
 You can [subscribe to this pull
 request](https://github.com/peerdom/peerdom-backend/pull/2) if you want to
 follow the situation.
