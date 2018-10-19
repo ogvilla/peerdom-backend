@@ -1,0 +1,88 @@
+[
+  {
+    "id": "40000000-1000-0000-0000-000000000002",
+    "type": "circle",
+    "name": "Research",
+    "purpose": "Understand the outside context of a product",
+    "tenant": {
+      "id": "20000000-0000-0000-0000-000000000001"
+    },
+    "parent": {
+      "id": "40000000-1000-0000-0000-000000000000"
+    }
+  },
+  {
+    "id": "40000000-3000-0000-0000-000000000003",
+    "type": "role",
+    "name": "Explorer",
+    "purpose": "Understand people’s experience and behaviours based on data collected in person",
+    "accountabilities": [
+      "Defining outline, goal, hypotheses etc.",
+      "Organising research sessions, unless they are part of user research days",
+      "Conducting research",
+      "Analysing results and documenting the insights",
+      "Exposing insights from research to internal project team (own initiative)",
+      "Exposing insights from research to clients (at least contribute)",
+      "Supporting other crew members during testing outside of user research days when necessary"
+    ],
+    "parent": {
+      "id": "40000000-1000-0000-0000-000000000002"
+    },
+    "tenant": {
+      "id": "20000000-0000-0000-0000-000000000001"
+    }
+  },
+  {
+    "id": "40000000-3000-0000-0000-000000000004",
+    "type": "role",
+    "name": "Research coordinator",
+    "purpose": "Keep research run smoothly and bring new insights",
+    "accountabilities": [
+      "Monitoring the need for research in running projects",
+      "Helping different projects in determining the appropriate research format",
+      "Organising user research days (recruiting participants, organising rooms)",
+      "Carrying out or supporting research sessions during user research days"
+    ],
+    "parent": {
+      "id": "40000000-1000-0000-0000-000000000002"
+    },
+    "tenant": {
+      "id": "20000000-0000-0000-0000-000000000001"
+    }
+  },
+  {
+    "id": "40000000-3000-0000-0000-000000000005",
+    "type": "role",
+    "name": "Research practices developer",
+    "purpose": "Bring in state-of-the-art research methods that bring value to the rocket and its customers",
+    "accountabilities": [
+      "Keeping up-to-date with user research trends and development",
+      "Investigating the potential of research methods for the rocket",
+      "Implementing new methods (incl. training other crew members)"
+    ],
+    "parent": {
+      "id": "40000000-1000-0000-0000-000000000002"
+    },
+    "tenant": {
+      "id": "20000000-0000-0000-0000-000000000001"
+    }
+  },
+  {
+    "id": "40000000-3000-0000-0000-000000000006",
+    "type": "role",
+    "name": "Data scientist",
+    "purpose": "Understand people’s behaviours based on aggregated data",
+    "accountabilities": [
+      "Defining measurements and questions/hypotheses",
+      "Analysing data and document insights",
+      "Exposing insights from analytics to internal project team (own initiative)",
+      "Exposing insights from analytics to clients (at least contribute)"
+    ],
+    "parent": {
+      "id": "40000000-1000-0000-0000-000000000002"
+    },
+    "tenant": {
+      "id": "20000000-0000-0000-0000-000000000001"
+    }
+  }
+]
