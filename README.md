@@ -55,6 +55,22 @@ mutation {
 }
 ```
 
+## Deployment
+
+The app is deployed via a `git push` to our deployment server (you need to be
+on our :rocket: IP range to access the server, so hop in a VPN near by if
+necessary).
+
+When deploying the server will execute:
+- `npm install`
+- `npm start`
+
+So any `pre` and `post` related command from the `package.json` will also be
+executed.
+
+Anything that should be done during the deployment should be part of those
+command. Feel free to use the `scripts` folder to store complex script there.
+
 ## License
 
 This work is currently all right reserved by Nothing AG. When we will be close
