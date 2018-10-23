@@ -1,6 +1,6 @@
-# peerdom-backend
+# Peerdom backend
 
-ecosystem of digital tools that helps organisations evolve as a decentralized, values-based collective of peers (backend)
+Ecosystem of digital tools that helps organisations evolve as a decentralized, values-based collective of peers (backend)
 
 ## Setup
 
@@ -36,6 +36,18 @@ CREATE EXTENSION pgcrypto;
 ## Config
 
 Edit ormconfig.json and add the DB settings (user & password)
+
+## Generating `schema.json`
+
+```
+apollo schema:download --endpoint=localhost:3000
+```
+
+## Generating TypeScript types from GraphQL schema
+
+```
+apollo codegen:generate --target typescript --addTypename --queries "./src/graphql/types/*.ts" --schema ./src/graphql/schema.ts
+```
 
 ## Testing on the graphql playground
 
