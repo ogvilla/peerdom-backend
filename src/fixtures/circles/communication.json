@@ -1,0 +1,52 @@
+[
+  {
+    "id": "40000000-1000-0000-0000-000000000005",
+    "type": "circle",
+    "name": "Communication",
+    "purpose": "Show others that we can help them",
+    "tenant": {
+      "id": "20000000-0000-0000-0000-000000000001"
+    },
+    "parent": {
+      "id": "40000000-1000-0000-0000-000000000000"
+    }
+  },
+  {
+    "id": "40000000-3000-0000-0000-000000000019",
+    "type": "role",
+    "name": "Speaker",
+    "purpose": "Physically expose our purpose to a larger audience to raise awareness about our mission",
+    "accountabilities": [
+      "Finding relevant topics for wicked problems we're trying to solve",
+      "Discovering speaking opportunities at meetups and conferences",
+      "Building relationships with the audience",
+      "Increasing approachability of the team"
+    ],
+    "parent": {
+      "id": "40000000-1000-0000-0000-000000000005"
+    },
+    "tenant": {
+      "id": "20000000-0000-0000-0000-000000000001"
+    }
+  },
+  {
+    "id": "40000000-3000-0000-0000-000000000020",
+    "type": "role",
+    "name": "Communication steward",
+    "purpose": "Show the world what we do and care about by sharing inspiration from inside the rocket",
+    "accountabilities": [
+      "Identifying topics worth sharing with the outside world (through articles, newsletters, social media posts, ...)",
+      "Gathering content input/inspirations from other crew members",
+      "Planning, producing and/or coordinating content (visual and textual)",
+      "Evaluating other crew members' content proposals and helping them produce content",
+      "Reflecting on existing communication channels to expose our signals",
+      "Researching new forms of communication"
+    ],
+    "parent": {
+      "id": "40000000-1000-0000-0000-000000000005"
+    },
+    "tenant": {
+      "id": "20000000-0000-0000-0000-000000000001"
+    }
+  }
+]

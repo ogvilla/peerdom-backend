@@ -1,0 +1,51 @@
+[
+  {
+    "id": "40000000-1000-0000-0000-000000000006",
+    "type": "circle",
+    "name": "Marketing",
+    "purpose": "Gather intelligence",
+    "tenant": {
+      "id": "20000000-0000-0000-0000-000000000001"
+    },
+    "parent": {
+      "id": "40000000-1000-0000-0000-000000000005"
+    }
+  },
+  {
+    "id": "40000000-1000-0000-0000-000000000021",
+    "type": "role",
+    "name": "Networker",
+    "purpose": "Gather intelligence from the market and find networking opportunities",
+    "accountabilities": [
+      "Collecting networking opportunities and informing the team about them",
+      "Being present, visible and approachable during events",
+      "Turning a good contact into a business opportunity by bridging the gathered intelligence with the business creation circle",
+      "Planning and creating products to be distributed or used (pens, post-its, shirts, coasters, posters, …"
+    ],
+    "parent": {
+      "id": "40000000-1000-0000-0000-000000000006"
+    },
+    "tenant": {
+      "id": "20000000-0000-0000-0000-000000000001"
+    }
+  },
+  {
+    "id": "40000000-1000-0000-0000-000000000022",
+    "type": "role",
+    "name": "Sponsor",
+    "purpose": "Sponsor events we as Nothing Interactive like to be associated with",
+    "accountabilities": [
+      "Discovering and identifying relevant events, meetups, conferences, group activities",
+      "Conceptualising creative approaches to sponsoring (we're small, we need to do things differently)",
+      "Figuring out financial support for sponsoring in balance with identified value",
+      "Motivating our crew members to be present at sponsored events",
+      "Conceptualising and realising physical sponsoring material"
+    ],
+    "parent": {
+      "id": "40000000-1000-0000-0000-000000000006"
+    },
+    "tenant": {
+      "id": "20000000-0000-0000-0000-000000000001"
+    }
+  }
+]

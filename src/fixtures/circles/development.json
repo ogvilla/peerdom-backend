@@ -1,0 +1,159 @@
+[
+  {
+    "id": "40000000-1000-0000-0000-000000000004",
+    "type": "circle",
+    "name": "Development",
+    "purpose": "Bring designs & concepts to life",
+    "tenant": {
+      "id": "20000000-0000-0000-0000-000000000001"
+    },
+    "parent": {
+      "id": "40000000-1000-0000-0000-000000000000"
+    }
+  },
+  {
+    "id": "40000000-3000-0000-0000-000000000011",
+    "type": "role",
+    "name": "Developer",
+    "purpose": "Create and maintain software that is a pleasure to work on, while keeping available time in mind",
+    "accountabilities": [
+      "Architecting software, identifying and defining interfaces and modules",
+      "Implementing software and corresponding tests using the most suitable technologies and by following the KISS and DRY principles",
+      "Thinking through the whole software to identify forgotten use-cases ('edge cases')",
+      "Sticking to code style standards and the overall development workflow of the rocket",
+      "Supporting other developers to write better code through code reviews and pair coding",
+      "Estimating concrete tasks and inform project coordinator early if more time is needed",
+      "Knowing the software to keep on giving suggestions and identifying problems with new features"
+    ],
+    "parent": {
+      "id": "40000000-1000-0000-0000-000000000004"
+    },
+    "tenant": {
+      "id": "20000000-0000-0000-0000-000000000001"
+    }
+  },
+  {
+    "id": "40000000-3000-0000-0000-000000000012",
+    "type": "role",
+    "name": "Server administrator",
+    "purpose": "Assist developer and team member in server setup",
+    "accountabilities": [
+      "Supporting project's team into getting the project out in the public",
+      "Setting up the needed servers and related tools (DNS,...) for the project to exist",
+      "Responding to team questions and provide feedback on the project's need"
+    ],
+    "parent": {
+      "id": "40000000-1000-0000-0000-000000000004"
+    },
+    "tenant": {
+      "id": "20000000-0000-0000-0000-000000000001"
+    }
+  },
+  {
+    "id": "40000000-3000-0000-0000-000000000013",
+    "type": "role",
+    "name": "Experienced lookout",
+    "purpose": "Support developers to make realistic estimates and sustainable architectural decisions",
+    "accountabilities": [
+      "Asking critical questions during estimation and planning of development projects",
+      "Providing a long-term view on sustainability of technological and architectural decisions",
+      "Helping to identify external interfaces, unknowns and needed explorative work",
+      "Helping to define limitations and risky parts that could break the estimations"
+    ],
+    "parent": {
+      "id": "40000000-1000-0000-0000-000000000004"
+    },
+    "tenant": {
+      "id": "20000000-0000-0000-0000-000000000001"
+    }
+  },
+  {
+    "id": "40000000-3000-0000-0000-000000000014",
+    "type": "role",
+    "name": "Maintenance guru",
+    "purpose": "Easen running products through asteroid fields and keep up running products and handle emergency situations",
+    "accountabilities": [
+      "Acting on emergency cases",
+      "Understanding scope of emergencies and give according response",
+      "Identifying possible sources of problems",
+      "Ideating workarounds and implement them",
+      "Making sure software stays up to date and communicate it",
+      "Reacting on general client feedback and questions",
+      "Proactively seeking for new challenges"
+    ],
+    "parent": {
+      "id": "40000000-1000-0000-0000-000000000004"
+    },
+    "tenant": {
+      "id": "20000000-0000-0000-0000-000000000001"
+    }
+  },
+  {
+    "id": "40000000-3000-0000-0000-000000000015",
+    "type": "role",
+    "name": "Standard advocate",
+    "purpose": "Ensure sustainability and maintainability of our development projects and workflows",
+    "accountabilities": [
+      "Staying up to date on current tools, technologies and standards (best practices, workflows, languages, architectures, frameworks, libraries, ...)",
+      "Collaborating with business creators and other dev circle roles to stay aligned on needs and wishes within the Rocket",
+      "Periodically analysing and updating our tools, technologies and standards to match the Rocket's goals and make the developers' life as easy as possible",
+      "On-boarding the development team to new tools, technologies and standards by providing the needed resources"
+    ],
+    "parent": {
+      "id": "40000000-1000-0000-0000-000000000004"
+    },
+    "tenant": {
+      "id": "20000000-0000-0000-0000-000000000001"
+    }
+  },
+  {
+    "id": "40000000-3000-0000-0000-000000000016",
+    "type": "role",
+    "name": "Backup carrier",
+    "purpose": "Keep up to date and safe off-site backups",
+    "accountabilities": [
+      "Keeping backup disks in a safe place outside of the office",
+      "Exchanging backup disks regularly"
+    ],
+    "parent": {
+      "id": "40000000-1000-0000-0000-000000000004"
+    },
+    "tenant": {
+      "id": "20000000-0000-0000-0000-000000000001"
+    }
+  },
+  {
+    "id": "40000000-3000-0000-0000-000000000017",
+    "type": "role",
+    "name": "Engine mechanist",
+    "purpose": "Make sure our digital engines keep running and support our crew works",
+    "accountabilities": [
+      "Keeping our network and software tools running during works hour",
+      "Making sure our physical servers and computers are working and in a protected environment",
+      "Responding to incidents in the infrastructure"
+    ],
+    "parent": {
+      "id": "40000000-1000-0000-0000-000000000004"
+    },
+    "tenant": {
+      "id": "20000000-0000-0000-0000-000000000001"
+    }
+  },
+  {
+    "id": "40000000-3000-0000-0000-000000000018",
+    "type": "role",
+    "name": "Crew oracle",
+    "purpose": "Help the crew troubleshoot issues they are facing when working",
+    "accountabilities": [
+      "Supporting crew members when they are facing issue with their tooling",
+      "Improving the documentation around our tooling to help reduce the time to repair",
+      "Handling software licenses"
+    ],
+    "parent": {
+      "id": "40000000-1000-0000-0000-000000000004"
+    },
+    "tenant": {
+      "id": "20000000-0000-0000-0000-000000000001"
+    }
+  }
+]

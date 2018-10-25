@@ -33,6 +33,11 @@ CREATE EXTENSION "uuid-ossp";
 CREATE EXTENSION pgcrypto;
 ```
 
+### Load fixtures
+```
+npm run load.data
+```
+
 ## Config
 
 Edit ormconfig.json and add the DB settings (user & password)

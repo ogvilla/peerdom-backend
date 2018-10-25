@@ -15,12 +15,31 @@ const entitiesToLoad = [
   {name: 'Tenant', jsonFileNames: ['tenants']},
   {name: 'Peer', jsonFileNames: ['peers']},
   {name: 'Mission', jsonFileNames: ['missions']},
-  {name: 'Node', jsonFileNames: ['coreRoles', 'circles/GC', 'circles/finances_admin', 'circles/research']},
+  {
+    name: 'Node',
+    jsonFileNames: [
+      'coreRoles',
+      'circles/GC',
+      'circles/finances_admin',
+      'circles/research',
+      'circles/design',
+      'circles/development',
+      'circles/communication',
+      'circles/marketing'
+    ]
+  },
   {name: 'User', jsonFileNames: ['user']},
   {name: 'Token', jsonFileNames: ['token']},
   {
     name: 'RoleHolding',
-    jsonFileNames: ['circles/GC_holders', 'circles/finances_admin_holders', 'circles/research_holders']
+    jsonFileNames: [
+      'circles/GC_holders',
+      'circles/finances_admin_holders',
+      'circles/research_holders',
+      'circles/design_holders',
+      'circles/communication_holders',
+      'circles/marketing_holders'
+    ]
   }
 ];
 

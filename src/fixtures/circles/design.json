@@ -1,0 +1,83 @@
+[
+  {
+    "id": "40000000-1000-0000-0000-000000000003",
+    "type": "circle",
+    "name": "Design",
+    "purpose": "Envision human products",
+    "tenant": {
+      "id": "20000000-0000-0000-0000-000000000001"
+    },
+    "parent": {
+      "id": "40000000-1000-0000-0000-000000000000"
+    }
+  },
+  {
+    "id": "40000000-3000-0000-0000-000000000007",
+    "type": "role",
+    "name": "UI designer",
+    "purpose": "Create functional and accessible user interface designs that meets the needs of the users and the client",
+    "accountabilities": [
+      "Designing the interaction between the user and the application",
+      "Designing the visual presentation of the overall layouts and the individual components",
+      "Building prototypes for evaluation and exposure",
+      "Creating documentation in the appropriate format"
+    ],
+    "parent": {
+      "id": "40000000-1000-0000-0000-000000000003"
+    },
+    "tenant": {
+      "id": "20000000-0000-0000-0000-000000000001"
+    }
+  },
+  {
+    "id": "40000000-3000-0000-0000-000000000008",
+    "type": "role",
+    "name": "Content designer",
+    "purpose": "Make products easy to use through meaningful copy",
+    "accountabilities": [
+      "Writing macro- and microcopy for products",
+      "Documenting copy and writing choices appropriately",
+      "Questioning 'story' of the product from a content perspective"
+    ],
+    "parent": {
+      "id": "40000000-1000-0000-0000-000000000003"
+    },
+    "tenant": {
+      "id": "20000000-0000-0000-0000-000000000001"
+    }
+  },
+  {
+    "id": "40000000-3000-0000-0000-000000000009",
+    "type": "role",
+    "name": "System designer",
+    "purpose": "Shape a solid and consistent structural groundwork upon which a user interface can be built",
+    "accountabilities": [
+      "Analysing and designing the information environment (IA)",
+      "Analysing and design the user’s journey through that environment",
+      "Creating visual representations for evaluation and exposure (DoGo-Maps, User Story Maps, Customer Journey Maps…)"
+    ],
+    "parent": {
+      "id": "40000000-1000-0000-0000-000000000003"
+    },
+    "tenant": {
+      "id": "20000000-0000-0000-0000-000000000001"
+    }
+  },
+  {
+    "id": "40000000-3000-0000-0000-000000000010",
+    "type": "role",
+    "name": "Product strategist",
+    "purpose": "Envision a clear and research-based strategy for the product",
+    "accountabilities": [
+      "Familiarising yourself with the client’s strategical goals (internal context) and research insights (external context)",
+      "Distilling contextual knowledge into project OKRs, strategical personas and user stories",
+      "Facilitating strategical decision-making for the client"
+    ],
+    "parent": {
+      "id": "40000000-1000-0000-0000-000000000003"
+    },
+    "tenant": {
+      "id": "20000000-0000-0000-0000-000000000001"
+    }
+  }
+]
