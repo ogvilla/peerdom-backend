@@ -20,7 +20,9 @@ export class RoleHolding {
   @PrimaryGeneratedColumn('uuid')
   id: string;
 
-  @ManyToOne(type => Peer, peer => peer.roleHoldings)
+  @ManyToOne(type => Peer, peer => peer.roleHoldings, {
+    onDelete: 'CASCADE'
+  })
   @JoinColumn()
   peer: Peer;
 

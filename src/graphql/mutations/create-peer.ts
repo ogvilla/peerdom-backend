@@ -4,14 +4,14 @@ import {getRepository} from 'typeorm';
 import {Peer} from '../../entity/peer';
 
 export const createPeerMutation = {
-  async createPeer(_, {peer: attrs}, context) {
+  async createPeer(_, {input: attrs}, context) {
     const repository = getRepository(Peer);
     const peer = {
       id: uuid(),
       tenant: context.user.tenant,
-      ...attrs
+      ...attrs.peer
     };
     await repository.save(peer);
-    return peer;
+    return {peer: peer};
   }
 };

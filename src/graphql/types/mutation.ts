@@ -1,7 +1,7 @@
 export const Mutation = `
     type Mutation {
-        createPeer (
-            peer: NewPeerPatch!
-        ): Peer
+      createPeer(input: CreatePeerInput!): CreatePeerPayload
+      deletePeer(input: DeletePeerInput!): DeletePeerPayload
+      updatePeer(input: UpdatePeerInput!): UpdatePeerPayload
     }
 `;

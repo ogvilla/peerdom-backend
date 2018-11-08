@@ -22,11 +22,15 @@ export class Peer {
   @PrimaryGeneratedColumn('uuid')
   id: string;
 
-  @ManyToOne(type => Tenant, tenant => tenant.peers)
+  @ManyToOne(type => Tenant, tenant => tenant.peers, {
+    onDelete: 'CASCADE'
+  })
   @JoinColumn()
   tenant: Tenant;
 
-  @OneToMany(type => RoleHolding, roleHolding => roleHolding.peer)
+  @OneToMany(type => RoleHolding, roleHolding => roleHolding.peer, {
+    onDelete: 'CASCADE'
+  })
   roleHoldings: RoleHolding[];
 
   @Column({nullable: true})
@@ -38,7 +42,9 @@ export class Peer {
   @Column()
   displayName: string;
 
-  @OneToOne(type => Mission, mission => mission.peer)
+  @OneToOne(type => Mission, mission => mission.peer, {
+    onDelete: 'CASCADE'
+  })
   mission: Mission;
 
   @CreateDateColumn()
@@ -47,6 +53,8 @@ export class Peer {
   @UpdateDateColumn()
   updatedAt: Date;
 
-  @OneToMany(type => PeerChange, peerChange => peerChange.peer)
+  @OneToMany(type => PeerChange, peerChange => peerChange.peer, {
+    onDelete: 'CASCADE'
+  })
   peerChanges: PeerChange[];
 }

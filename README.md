@@ -73,13 +73,38 @@ Here are proposed queries and mutations to test the data on the graphql playgrou
 }
 ```
 
-
-### Create a new `peer`
+### Peer CRUD operations
 ```
-mutation {
-  createPeer(
-    peer: {firstName: "x", lastName: "x", displayName: "x"}
-  ) {firstName}
+query peerQuery {
+  peer(id:"10000000-0000-0000-0000-000000000002") {
+    firstName
+  }
+}
+
+mutation peerMutation {
+    createPeer(
+    input: {peer: {firstName: "x", lastName: "x", displayName: "x"}}
+    ) {
+      peer {
+        firstName
+      }
+    }
+  
+    deletePeer(
+      input: {id: "10000000-0000-0000-0000-000000000001"}
+    ) {
+      peer {
+        firstName
+      }
+    }
+    
+    updatePeer(
+        input: {id: "10000000-0000-0000-0000-000000000002", patch: {firstName: "y", lastName: "y", displayName: "y"}}
+    ) {
+        peer {
+          firstName
+        }
+    }
 }
 ```
 
