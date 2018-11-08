@@ -12,7 +12,7 @@
     }
   },
   {
-    "id": "40000000-1000-0000-0000-000000000021",
+    "id": "40000000-3000-0000-0000-000000000021",
     "type": "role",
     "name": "Networker",
     "purpose": "Gather intelligence from the market and find networking opportunities",
@@ -30,7 +30,7 @@
     }
   },
   {
-    "id": "40000000-1000-0000-0000-000000000022",
+    "id": "40000000-3000-0000-0000-000000000022",
     "type": "role",
     "name": "Sponsor",
     "purpose": "Sponsor events we as Nothing Interactive like to be associated with",
