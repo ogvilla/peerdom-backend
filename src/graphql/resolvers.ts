@@ -5,27 +5,14 @@ import {peersResolver} from './resolvers/peers';
 import {mapResolver} from './resolvers/map';
 import {coreRolesResolver} from './resolvers/coreRoles';
 import {tenantResolver} from './resolvers/tenant';
-import {peerResolver} from './resolvers/peer';
+import {nodesResolver} from './resolvers/node';
 
 export const resolvers = {
-  Node: {
-    __resolveType(obj, context, info) {
-      if (obj.holders) {
-        return 'Role';
-      }
-
-      if (obj.children) {
-        return 'Circle';
-      }
-
-      return null;
-    }
-  },
   Query: {
     ...tenantResolver,
     ...peersResolver,
-    ...peerResolver,
     ...mapResolver,
+    ...nodesResolver,
     ...coreRolesResolver
   },
 

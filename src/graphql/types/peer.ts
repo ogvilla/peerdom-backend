@@ -7,8 +7,8 @@ export const Peer = gql`
     lastName: String
     displayName: String!
     mission: Mission
-    roles: [Role]
-    mapStructure: Circle
+    roles: [Node]
+    mapStructure: Node
     createdAt: GraphQLDateTime!
     updatedAt: GraphQLDateTime!
   }

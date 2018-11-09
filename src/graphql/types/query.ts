@@ -6,6 +6,7 @@ export const Query = gql`
     peers: [Peer]
     peer(id: String!): Peer
     map: Map
-    coreRoles: [Role]
+    nodes(ids: [ID]!): [Node]
+    coreRoles: [Node]
   }
 `;

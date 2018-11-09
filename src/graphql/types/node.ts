@@ -1,8 +1,9 @@
 import {gql} from 'apollo-server-express';
 
 export const Node = gql`
-  interface Node {
+  type Node {
     id: ID!
+    parentId: ID
     type: String!
     name: String!
     purpose: String
@@ -13,5 +14,9 @@ export const Node = gql`
     color: String
     createdAt: GraphQLDateTime
     updatedAt: GraphQLDateTime
+    children: [Node]
+    peerIds: [String]
+    directPeerIds: [String]
+    holders: [Holder]
   }
 `;

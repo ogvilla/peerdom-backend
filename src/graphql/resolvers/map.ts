@@ -6,14 +6,8 @@ export const mapResolver = {
     const repository = getRepository(Node);
     // TODO: filter for one tenant
     const nodes = await repository.find({
-      relations: [
-        'parent',
-        'roleHoldings',
-        'roleHoldings.peer',
-        'coreRoleHoldings',
-        'coreRoleHoldings.peer',
-        'coreRoleHoldings.role'
-      ]
+      select: ['id', 'type', 'parent'],
+      relations: ['parent']
     });
     let circleStructure: any = {};
     // Adding root node
@@ -39,24 +33,15 @@ export const mapResolver = {
 };
 
 const populateChildren = (node, nodes) => {
-  const children = nodes.filter(child => child.parent && child.parent.id === node.id).map(child => {
-    const populatedChild = populateChildren(child, nodes);
-    // We don't need the reference to the parent in the map structure
-    populatedChild.parent = undefined;
-
-    // We don't want all the information about the core role to be included multiple times
-    // TODO: Figure out how to already get rid of the unwanted data when querying the DB (in repository.find() above)
-    populatedChild.coreRoleHoldings = populatedChild.coreRoleHoldings.map(coreRoleHolding => {
-      const newCoreRoleHolding = coreRoleHolding;
-      newCoreRoleHolding.roleId = newCoreRoleHolding.role.id;
-      newCoreRoleHolding.role = undefined;
-      return newCoreRoleHolding;
-    });
-    return populatedChild;
-  });
+  // Remove attributes that were useful to build the tree structure but that we don't want in the result
+  node.parent = undefined;
+  node.type = undefined;
+  const children = nodes
+    .filter(child => child.parent && child.parent.id === node.id)
+    .map(child => populateChildren(child, nodes));
 
   return {
-    ...node,
-    children
+    id: node.id,
+    children: children.length > 0 ? children : undefined
   };
 };
