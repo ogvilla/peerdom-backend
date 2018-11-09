@@ -6,12 +6,7 @@ import {ApolloServer, AuthenticationError} from 'apollo-server-express';
 import {createConnection} from 'typeorm';
 
 import {localStrategy, loginHandler, addUserToRequest} from './controllers/auth';
-import {resolvers} from 'graphql/resolvers';
-import {Mutation} from 'graphql/types/mutation';
-import {Query} from 'graphql/types/query';
-import {types} from 'graphql/types';
-
-const typeDefs = [Query, Mutation, ...types];
+import {typeDefs, resolvers} from 'graphql/schema';
 
 const server = new ApolloServer({
   typeDefs,
