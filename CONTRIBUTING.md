@@ -28,12 +28,11 @@ We recommend and process following types of conventional commits:
 - **chore**: Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm)
 - **ci**: Changes to our CI configuration files and scripts (example scopes: Travis, Circle, BrowserStack, SauceLabs)
 - **docs**: Documentation only changes
-- **feat**: A new feature
-- **fix**: A bug fix
+- **feat**: A new feature or an extension to an existing feature
+- **fix**: A bug fix or other minor fix visible to the user
 - **a11y**: All accessibility specific improvements
 - **perf**: A code change that improves performance
-- **refactor**: A code change that neither fixes a bug nor adds a feature
-- **style**: Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
+- **refactor**: A code change without meaning to the user (re-organising code, abstracting functionality in methods, changes in architecture of modules, ...)- **style**: Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
 - **test**: Adding missing tests or correcting existing tests
 
 ### Scope and subject
