@@ -5,7 +5,7 @@ import {peersResolver} from './resolvers/peers';
 import {mapResolver} from './resolvers/map';
 import {coreRolesResolver} from './resolvers/coreRoles';
 import {tenantResolver} from './resolvers/tenant';
-import {nodesResolver} from './resolvers/node';
+import {nodesResolver} from './resolvers/nodes';
 
 export const resolvers = {
   Query: {
