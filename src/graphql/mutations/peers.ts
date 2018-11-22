@@ -9,7 +9,7 @@ export const createPeerMutation = {
     const peer = {
       id: uuid(),
       tenant: context.user.tenant,
-      ...attrs.peer
+      ...attrs.newPeer
     };
     await repository.save(peer);
     return {peer: peer};

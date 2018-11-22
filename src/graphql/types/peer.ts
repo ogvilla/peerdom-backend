@@ -14,24 +14,32 @@ export const Peer = gql`
   }
 `;
 
-export const PeerInput = gql`
-  input PeerInput {
+export const PeerNew = gql`
+  input PeerNew {
     firstName: String!
     lastName: String!
     displayName: String!
   }
 `;
 
+export const PeerPatch = gql`
+  input PeerPatch {
+    firstName: String
+    lastName: String
+    displayName: String
+  }
+`;
+
 export const UpdatePeerInput = gql`
   input UpdatePeerInput {
     id: ID!
-    patch: PeerInput
+    patch: PeerPatch
   }
 `;
 
 export const CreatePeerInput = gql`
   input CreatePeerInput {
-    peer: PeerInput
+    newPeer: PeerNew
   }
 `;
 

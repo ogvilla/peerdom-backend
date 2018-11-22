@@ -6,7 +6,8 @@ import {
   DeletePeerPayload,
   UpdatePeerInput,
   UpdatePeerPayload,
-  PeerInput
+  PeerNew,
+  PeerPatch
 } from './types/peer';
 import {Map} from './types/map';
 import {Mission} from './types/mission';
@@ -48,5 +49,6 @@ export const types = [
   DeletePeerPayload,
   UpdatePeerInput,
   UpdatePeerPayload,
-  PeerInput
+  PeerNew,
+  PeerPatch
 ];
