@@ -5,7 +5,7 @@ export const Query = gql`
     tenant: Tenant
     peers(id: ID): [Peer]
     map: Map
-    nodes(ids: [ID]!): [Node]
+    nodes(ids: [ID]): [Node]
     coreRoles: [Node]
   }
 `;

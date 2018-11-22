@@ -1,4 +1,4 @@
-import {FindManyOptions, getRepository, In} from 'typeorm';
+import {getRepository, In} from 'typeorm';
 import {Node} from '../../entity/node';
 
 export const nodesResolver = {
@@ -9,12 +9,16 @@ export const nodesResolver = {
     const resolveChildren = requestedFields.indexOf('children') !== -1;
     const resolveDirectPeers = requestedFields.indexOf('directPeers') !== -1;
 
-    const findOptions: FindManyOptions = {
+    const findOptions: any = {
       where: {
-        id: In(args.ids)
+        tenant: context.user.tenant
       },
       relations: ['roleHoldings', 'roleHoldings.peer', 'coreRoleHoldings', 'coreRoleHoldings.peer']
     };
+
+    if (args.id) {
+      findOptions.where.id = In(args.ids);
+    }
 
     // Retrieve children only if the GraphQL query asks for it.
     if (resolveChildren || resolveDirectPeers) {
