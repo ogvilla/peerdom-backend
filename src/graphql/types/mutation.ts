@@ -6,5 +6,8 @@ export const Mutation = `
       createNode(input: CreateNodeInput!): CreateNodePayload
       deleteNode(input: DeleteNodeInput!): DeleteNodePayload
       updateNode(input: UpdateNodeInput!): UpdateNodePayload
+      createRoleHolding(input: CreateRoleHoldingInput!): CreateRoleHoldingPayload
+      deleteRoleHolding(input: DeleteRoleHoldingInput!): DeleteRoleHoldingPayload
+      updateRoleHolding(input: UpdateRoleHoldingInput!): UpdateRoleHoldingPayload
     }
 `;

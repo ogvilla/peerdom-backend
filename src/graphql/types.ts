@@ -11,7 +11,17 @@ import {
 } from './types/peer';
 import {Map} from './types/map';
 import {Mission} from './types/mission';
-import {Holder} from './types/holder';
+import {
+  Holder,
+  CreateRoleHoldingInput,
+  CreateRoleHoldingPayload,
+  DeleteRoleHoldingInput,
+  DeleteRoleHoldingPayload,
+  UpdateRoleHoldingInput,
+  UpdateRoleHoldingPayload,
+  RoleHoldingNew,
+  RoleHoldingPatch
+} from './types/holder';
 import {
   Node,
   CreateNodeInput,
@@ -50,5 +60,13 @@ export const types = [
   UpdatePeerInput,
   UpdatePeerPayload,
   PeerNew,
-  PeerPatch
+  PeerPatch,
+  CreateRoleHoldingInput,
+  CreateRoleHoldingPayload,
+  DeleteRoleHoldingInput,
+  DeleteRoleHoldingPayload,
+  UpdateRoleHoldingInput,
+  UpdateRoleHoldingPayload,
+  RoleHoldingNew,
+  RoleHoldingPatch
 ];
