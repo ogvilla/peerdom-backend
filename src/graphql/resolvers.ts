@@ -1,4 +1,5 @@
 import {createPeerMutation, deletePeerMutation, updatePeerMutation} from './mutations/peers';
+import {createNodeMutation, deleteNodeMutation, updateNodeMutation} from './mutations/nodes';
 import {peersResolver} from './resolvers/peers';
 import {mapResolver} from './resolvers/map';
 import {coreRolesResolver} from './resolvers/coreRoles';
@@ -17,6 +18,9 @@ export const resolvers = {
   Mutation: {
     ...createPeerMutation,
     ...deletePeerMutation,
-    ...updatePeerMutation
+    ...updatePeerMutation,
+    ...createNodeMutation,
+    ...deleteNodeMutation,
+    ...updateNodeMutation
   }
 };

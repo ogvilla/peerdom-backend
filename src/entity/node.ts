@@ -18,7 +18,9 @@ export class Node {
   @PrimaryGeneratedColumn('uuid')
   id: string;
 
-  @ManyToOne(type => Node, parent => parent.children)
+  @ManyToOne(type => Node, parent => parent.children, {
+    onDelete: 'CASCADE'
+  })
   @JoinColumn()
   parent: Node;
 

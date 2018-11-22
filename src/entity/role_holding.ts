@@ -26,11 +26,15 @@ export class RoleHolding {
   @JoinColumn()
   peer: Peer;
 
-  @ManyToOne(type => Node, node => node.roleHoldings)
+  @ManyToOne(type => Node, node => node.roleHoldings, {
+    onDelete: 'CASCADE'
+  })
   @JoinColumn()
   role: Node;
 
-  @ManyToOne(type => Node, node => node.coreRoleHoldings)
+  @ManyToOne(type => Node, node => node.coreRoleHoldings, {
+    onDelete: 'CASCADE'
+  })
   @JoinColumn()
   circle: Node;
 
