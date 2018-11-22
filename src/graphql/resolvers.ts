@@ -1,6 +1,4 @@
-import {createPeerMutation} from './mutations/create-peer';
-import {deletePeerMutation} from './mutations/delete-peer';
-import {updatePeerMutation} from './mutations/update-peer';
+import {createPeerMutation, deletePeerMutation, updatePeerMutation} from './mutations/peers';
 import {peersResolver} from './resolvers/peers';
 import {mapResolver} from './resolvers/map';
 import {coreRolesResolver} from './resolvers/coreRoles';
