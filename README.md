@@ -76,7 +76,7 @@ Here are proposed queries and mutations to test the data on the graphql playgrou
 ### Peer CRUD operations
 ```
 query peerQuery {
-  peer(id:"10000000-0000-0000-0000-000000000002") {
+  peers(id:"10000000-0000-0000-0000-000000000002") {
     firstName
   }
 }
