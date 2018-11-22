@@ -37,6 +37,7 @@ const entitiesToLoad = [
       'circles/finances_admin_holders',
       'circles/research_holders',
       'circles/design_holders',
+      'circles/development_holders',
       'circles/communication_holders',
       'circles/marketing_holders'
     ]
