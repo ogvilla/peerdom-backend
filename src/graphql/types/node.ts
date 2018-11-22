@@ -23,7 +23,7 @@ export const Node = gql`
 
 export const NodeNew = gql`
   input NodeNew {
-    parentId: ID
+    parent: ID
     type: String!
     name: String!
     purpose: String
@@ -37,7 +37,7 @@ export const NodeNew = gql`
 
 export const NodePatch = gql`
   input NodePatch {
-    parentId: ID
+    parent: ID
     type: String
     name: String
     purpose: String
