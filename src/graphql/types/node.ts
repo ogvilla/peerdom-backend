@@ -15,8 +15,8 @@ export const Node = gql`
     createdAt: GraphQLDateTime
     updatedAt: GraphQLDateTime
     children: [Node]
-    peerIds: [String]
-    directPeerIds: [String]
+    peers: [Peer]
+    directPeers: [Peer]
     holders: [Holder]
   }
 `;
