@@ -14,7 +14,10 @@
     "domains": [
       "Role assignments within the circle"
     ],
-    "color": "#edf2ba"
+    "color": "#edf2ba",
+    "tenant": {
+      "id": "20000000-0000-0000-0000-000000000001"
+    }
   },
   {
     "id": "40000000-2000-0000-0000-000000000002",
@@ -26,7 +29,10 @@
       "Seeking to understand tensions conveyed by sub-circle circle members, and deciding which are appropriate to process in the super-circle, where necessary with input from the OKR agent",
       "Providing visibility of the sub-circle’s health to the super-circle, including reporting on OKRs or any metrics assigned to the whole sub-circle"
     ],
-    "color": "#f5d9d9"
+    "color": "#f5d9d9",
+    "tenant": {
+      "id": "20000000-0000-0000-0000-000000000001"
+    }
   },
   {
     "id": "40000000-2000-0000-0000-000000000003",
@@ -37,7 +43,10 @@
       "Facilitating the circle’s governance meetings",
       "Auditing the meetings and records of sub-circles as needed, and declaring a process breakdown upon discovering a pattern of behaviour that conflicts with the rules of the constitution"
     ],
-    "color": "#e0f9ff"
+    "color": "#e0f9ff",
+    "tenant": {
+      "id": "20000000-0000-0000-0000-000000000001"
+    }
   },
   {
     "id": "40000000-2000-0000-0000-000000000004",
@@ -52,6 +61,9 @@
       "Capturing and publishing the outputs of the circle’s required meetings, and maintaining a compiled view of the circle’s current governance, checklist items, and metrics",
       "Interpreting governance and the constitution upon request"
     ],
-    "color": "#ddd9f9"
+    "color": "#ddd9f9",
+    "tenant": {
+      "id": "20000000-0000-0000-0000-000000000001"
+    }
   }
 ]
